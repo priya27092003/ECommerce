@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+</head>
+<body>
+    <h1>Edit Product</h1>
+    <form action="/products/edit/<%= product._id %>" method="POST">
+        <label>Image URL:</label>
+        <input type="url" name="image" value="<%= product.image %>" required><br>
+        <label>Name:</label>
+        <input type="text" name="name" value="<%= product.name %>" required><br>
+        <label>Price:</label>
+        <input type="number" name="price" value="<%= product.price %>" required><br>
+        <label>Discount:</label>
+        <input type="number" name="discount" value="<%= product.discount %>"><br>
+        <label>Background Color:</label>
+        <input type="color" name="bgColor" value="<%= product.bgColor %>"><br>
+        <label>Panel Color:</label>
+        <input type="color" name="panelcolor" value="<%= product.panelcolor %>"><br>
+        <label>Text Color:</label>
+        <input type="color" name="textColor" value="<%= product.textColor %>"><br>
+        <button type="submit">Update Product</button>
+    </form>
+</body>
+</html>

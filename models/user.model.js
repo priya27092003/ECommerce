@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-xWJKkDl8Tm1IEekI
 
 const userSchema = mongoose.Schema({
     fullname : String,
